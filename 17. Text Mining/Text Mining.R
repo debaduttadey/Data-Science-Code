@@ -148,10 +148,10 @@ library("syuzhet")
 library("twitteR")
 library("ROAuth")
 
-consumer_key <- "WhGkIk5brFRKktbC12N5uV8SR"
-consumer_secret <- "9KtDzXiX0gBq4jGrAk8i98e9OF8oo4eR72gE2VYhrE6kfyKN2j"
-access_token <- "97806476-jc1yvs53UAvD5eraj7CQH8EBTdhGS7jSvdQrge9eI"
-access_secret <- "NPZ7AjOqW35fPbtPdQRlWCort3PpruCAJg3KTn6ViLzTy"
+consumer_key <- "Enter consumer_key"
+consumer_secret <- "Enter consumer_secret"
+access_token <- "Enter access_token"
+access_secret <- "Enter access_secret"
 
 setup_twitter_oauth(consumer_key, consumer_secret, access_token, access_secret)
 
@@ -195,7 +195,7 @@ realdonaldCorpus1<-tm_map(realdonaldCorpus1,removeNumbers)
 removeURL<-function(x) gsub('http[^[:alnum:]]+','',x)
 realdonaldCorpus1<-tm_map(realdonaldCorpus1,content_transformer(removeURL))
 realdonaldCorpus1<-tm_map(realdonaldCorpus1,removeWords,stopwords('english'))
-realdonaldCorpus1<-tm_map(realdonaldCorpus1,removeWords,c('d.','dâ???¦','food','come','two','modi','amp','uuu','realdonald','uub','uue','uuuu','ueuu','uuue','ufu'
+realdonaldCorpus1<-tm_map(realdonaldCorpus1,removeWords,c('d.','dÃ¢???Â¦','food','come','two','modi','amp','uuu','realdonald','uub','uue','uuuu','ueuu','uuue','ufu'
                                                         ,'uuuuu','uuuue','udu','uau','uudufue','uueuuu','uueu','uueuf','ucu','uuc','howdymodi','udueuu','uueuueu'
                                                         ,'ueubuu','f.','unno','uuuuuf','uauduuueuueuuuduu','ufuduueudua','uueuuuc','uuu.','narendramodi'
                                                         ,'uuu.','uuufuueu','uueueuu','uuuucufu','uduuduub','u.','ueu','ueuuuduuuue','uuueu','uufuu','uueuudufuuduue'
@@ -704,10 +704,10 @@ library("syuzhet")
 library("twitteR")
 library("ROAuth")
 
-consumer_key <- "WhGkIk5brFRKktbC12N5uV8SR"
-consumer_secret <- "9KtDzXiX0gBq4jGrAk8i98e9OF8oo4eR72gE2VYhrE6kfyKN2j"
-access_token <- "97806476-jc1yvs53UAvD5eraj7CQH8EBTdhGS7jSvdQrge9eI"
-access_secret <- "NPZ7AjOqW35fPbtPdQRlWCort3PpruCAJg3KTn6ViLzTy"
+consumer_key <- "Enter consumer_key"
+consumer_secret <- "Enter consumer_secret"
+access_token <- "Enter access_token"
+access_secret <- "Enter access_secret"
 
 setup_twitter_oauth(consumer_key, consumer_secret, access_token, access_secret)
 
@@ -751,7 +751,7 @@ HowdyModyCorpus1<-tm_map(HowdyModyCorpus1,removeNumbers)
 removeURL<-function(x) gsub('http[^[:alnum:]]+','',x)
 HowdyModyCorpus1<-tm_map(HowdyModyCorpus1,content_transformer(removeURL))
 HowdyModyCorpus1<-tm_map(HowdyModyCorpus1,removeWords,stopwords('english'))
-HowdyModyCorpus1<-tm_map(HowdyModyCorpus1,removeWords,c('d.','dâ???¦','food','come','two','modi','amp','uuu','howdymody','uub','uue','uuuu','ueuu','uuue','ufu'
+HowdyModyCorpus1<-tm_map(HowdyModyCorpus1,removeWords,c('d.','dÃ¢???Â¦','food','come','two','modi','amp','uuu','howdymody','uub','uue','uuuu','ueuu','uuue','ufu'
                                                         ,'uuuuu','uuuue','udu','uau','uudufue','uueuuu','uueu','uueuf','ucu','uuc','howdymodi','udueuu','uueuueu'
                                                         ,'ueubuu','f.','unno','uuuuuf','uauduuueuueuuuduu','ufuduueudua','uueuuuc','uuu.','narendramodi'
                                                         ,'uuu.','uuufuueu','uueueuu','uuuucufu','uduuduub','u.','ueu','ueuuuduuuue','uuueu','uufuu','uueuudufuuduue'
